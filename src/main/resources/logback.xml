@@ -7,12 +7,14 @@
 			</Pattern>
 		</layout>
 	</appender>
-	<logger name="org.springframework" level="debug" additivity="false">
+	<!-- logger可以覆盖root标签配置的属性 -->
+	<logger name="org.springframework" level="info" additivity="false">
 		<appender-ref ref="STDOUT" />
 	</logger>
-	<logger name="com.mkyong.helloworld" level="debug" additivity="false">
+	<logger name="com.mkyong.helloworld" level="info" additivity="false">
 		<appender-ref ref="STDOUT" />
 	</logger>
+	<!-- 默认的log级别 -->
 	<root level="error">
 		<appender-ref ref="STDOUT" />
 	</root>
