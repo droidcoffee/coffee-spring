@@ -52,11 +52,11 @@
 		<!-- <property name="configLocation" value="classpath:mybatis-config.xml" 
 			/> -->
 		<!-- 映射文件路径 -->
-		<property name="mapperLocations" value="classpath:com/huawei/mapping/*.xml" />
-		<property name="typeAliasesPackage" value="com.huawei.model" />
+		<property name="mapperLocations" value="classpath:com/coffee/mapping/*.xml" />
+		<property name="typeAliasesPackage" value="com.coffee.model" />
 	</bean>
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.huawei.mapper" />
+		<property name="basePackage" value="com.coffee.mapper" />
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
 	</bean>
 

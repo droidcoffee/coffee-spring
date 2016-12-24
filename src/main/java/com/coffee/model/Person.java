@@ -1,4 +1,4 @@
-package com.huawei.model;
+package com.coffee.model;
 
 /**
  * person 实体

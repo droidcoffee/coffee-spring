@@ -1,8 +1,8 @@
-package com.huawei.mapper;
+package com.coffee.mapper;
 
 import java.util.List;
 
-import com.huawei.model.Person;
+import com.coffee.model.Person;
 
 public interface PersonMapper {
     /**

@@ -1,8 +1,8 @@
-package com.huawei.service;
+package com.coffee.service;
 
 import java.util.List;
 
-import com.huawei.model.Person;
+import com.coffee.model.Person;
 
 public interface IPersonService {
 

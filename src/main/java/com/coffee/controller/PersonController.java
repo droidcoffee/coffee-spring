@@ -1,4 +1,4 @@
-package com.huawei.controller;
+package com.coffee.controller;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.huawei.model.Person;
-import com.huawei.service.IPersonService;
+import com.coffee.model.Person;
+import com.coffee.service.IPersonService;
 
 @Controller
 @RequestMapping("/personController")

@@ -1,4 +1,4 @@
-package com.huawei.service.impl;
+package com.coffee.service.impl;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.huawei.mapper.PersonMapper;
-import com.huawei.model.Person;
-import com.huawei.service.IPersonService;
+import com.coffee.mapper.PersonMapper;
+import com.coffee.model.Person;
+import com.coffee.service.IPersonService;
 
 @Service("personService")
 public class PersonServiceImpl implements IPersonService {
