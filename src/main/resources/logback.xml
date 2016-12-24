@@ -15,7 +15,7 @@
 		<appender-ref ref="STDOUT" />
 	</logger>
 	<!-- 默认的log级别 -->
-	<root level="error">
+	<root level="info">
 		<appender-ref ref="STDOUT" />
 	</root>
 </configuration>
