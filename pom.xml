@@ -62,6 +62,12 @@
 			<artifactId>spring-context-support</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+		<!-- spring文件上传 -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.2</version>
+		</dependency>
 		<!-- 添加MyBatis依赖 -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
