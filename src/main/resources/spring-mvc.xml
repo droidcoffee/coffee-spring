@@ -16,14 +16,32 @@
 
 	<!-- 设置使用注解的类所在的jar包 -->
 	<context:component-scan base-package="com.coffee.controller" />
-	<context:component-scan base-package="com.coffee.app"/>
-	
+	<context:component-scan base-package="com.coffee.app" />
+
 	<!-- 对转向页面的路径解析。prefix：前缀， suffix：后缀 -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
 		p:prefix="/" p:suffix=".jsp" />
 
-	<bean id="stringHttpMessageConverter" class="org.springframework.http.converter.StringHttpMessageConverter"/>
+	<!-- 
+	<bean
+		class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+		<property name="customReturnValueHandlers">
+			<list>
+				<bean class="com.coffee.app.RequestResponseBodyMethodProcessorExt">
+					<constructor-arg>
+						<list>
+							<ref bean="stringHttpMessageConverter" />
+						</list>
+					</constructor-arg>
+				</bean>
+			</list>
+		</property>
+
+	</bean>
+
+	<bean id="stringHttpMessageConverter"
+		class="org.springframework.http.converter.StringHttpMessageConverter" />
 	<mvc:annotation-driven>
 		<mvc:return-value-handlers>
 			<bean class="com.coffee.app.RequestResponseBodyMethodProcessorExt">
@@ -35,11 +53,12 @@
 			</bean>
 		</mvc:return-value-handlers>
 	</mvc:annotation-driven>
+	 -->
 	<!-- 项目中的拦截器、主要用作log处理 -->
 	<mvc:interceptors>
 		<mvc:interceptor>
-			<mvc:mapping path="/droid/**" />
-			<bean class="com.coffee.app.AppInterceptor"></bean>
+			<mvc:mapping path="/**" />
+			<bean class="com.coffee.app.LogInterceptor"></bean>
 		</mvc:interceptor>
 	</mvc:interceptors>
 </beans>

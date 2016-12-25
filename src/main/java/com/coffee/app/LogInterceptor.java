@@ -9,14 +9,14 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 /**
- * app项目公用拦截器
+ * 项目的日志记录拦截器, 记录所有的request请求和返回给app的ResponseBody数据<br>
  * 
  * @author coffee<br>
  *         2016年12月24日下午6:07:43
  */
-public class AppInterceptor extends HandlerInterceptorAdapter {
+public class LogInterceptor extends HandlerInterceptorAdapter {
 
-	Logger log = LoggerFactory.getLogger("AppInterceptor");
+	Logger log = LoggerFactory.getLogger(LogInterceptor.class.getSimpleName());
 
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
@@ -31,7 +31,6 @@ public class AppInterceptor extends HandlerInterceptorAdapter {
 		super.postHandle(request, response, handler, modelAndView);
 		Object result = request.getAttribute("responseBody");
 		log.info(result + "");
-		System.out.println(result);
 	}
 
 	@Override
