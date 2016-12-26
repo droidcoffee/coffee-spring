@@ -4,3 +4,118 @@
 2016-12-26 00:05:53.269 [qtp11512234-15] INFO  LogInterceptor - /droid/file/upload
 2016-12-26 00:06:38.800 [qtp11512234-15] INFO  LogInterceptor - /droid/file/upload
 2016-12-26 00:06:58.617 [qtp11512234-21] INFO  LogInterceptor - /droid/file/upload
+2016-12-26 21:05:26.019 [qtp27266569-21] INFO  LogInterceptor - /droid/file/uploadCrash
+2016-12-26 21:05:31.337 [qtp27266569-15] INFO  LogInterceptor - /droid/file/uploadCrash
+2016-12-26 21:09:58.343 [qtp27266569-16] INFO  LogInterceptor - /droid/file/uploadCrash
+2016-12-26 21:10:18.586 [qtp27266569-20] INFO  LogInterceptor - /droid/file/uploadCrash
+2016-12-26 21:10:18.587 [qtp27266569-20] INFO  LogInterceptor - {------WebKitFormBoundaryhBqw9TBBHQqsYD4B
+Content-Disposition: form-data; name=["file"; filename="master_preferences"
+Content-Type: application/octet-stream
+
+﻿
+      {
+        "distribution": {
+          "make_chrome_default_for_user": true
+        }
+      }
+    
+------WebKitFormBoundaryhBqw9TBBHQqsYD4B
+Content-Disposition: form-data; name=""
+
+
+------WebKitFormBoundaryhBqw9TBBHQqsYD4B--
+]}
+2016-12-26 21:10:18.608 [qtp27266569-20] INFO  LogInterceptor - 
+2016-12-26 21:11:39.694 [qtp27266569-19] INFO  LogInterceptor - /droid/file/uploadCrash
+2016-12-26 21:11:39.695 [qtp27266569-19] INFO  LogInterceptor - {------WebKitFormBoundaryW1VnPBE2z9RmOR8f
+Content-Disposition: form-data; name=["file"; filename="master_preferences"
+Content-Type: application/octet-stream
+
+﻿
+      {
+        "distribution": {
+          "make_chrome_default_for_user": true
+        }
+      }
+    
+------WebKitFormBoundaryW1VnPBE2z9RmOR8f
+Content-Disposition: form-data; name=""
+
+
+------WebKitFormBoundaryW1VnPBE2z9RmOR8f--
+]}
+2016-12-26 21:11:39.698 [qtp27266569-19] INFO  LogInterceptor - 
+2016-12-26 21:16:56.214 [qtp27266569-18] INFO  LogInterceptor - /droid/file/uploadCrash
+2016-12-26 21:16:56.227 [qtp27266569-18] INFO  LogInterceptor - {------WebKitFormBoundary5VBV43MKA4VquRyP
+Content-Disposition: form-data; name=["file"; filename="master_preferences"
+Content-Type: application/octet-stream
+
+﻿
+      {
+        "distribution": {
+          "make_chrome_default_for_user": true
+        }
+      }
+    
+------WebKitFormBoundary5VBV43MKA4VquRyP
+Content-Disposition: form-data; name=""
+
+
+------WebKitFormBoundary5VBV43MKA4VquRyP--
+]}
+2016-12-26 21:16:56.336 [qtp27266569-18] INFO  LogInterceptor - 
+2016-12-26 21:17:13.097 [qtp27266569-18] INFO  LogInterceptor - /droid/file/uploadCrash
+2016-12-26 21:17:13.098 [qtp27266569-18] INFO  LogInterceptor - {------WebKitFormBoundaryxdV8VIB40ne6yWkx
+Content-Disposition: form-data; name=["file"; filename="master_preferences"
+Content-Type: application/octet-stream
+
+﻿
+      {
+        "distribution": {
+          "make_chrome_default_for_user": true
+        }
+      }
+    
+------WebKitFormBoundaryxdV8VIB40ne6yWkx
+Content-Disposition: form-data; name=""
+
+
+------WebKitFormBoundaryxdV8VIB40ne6yWkx--
+]}
+2016-12-26 21:18:28.502 [qtp27266569-18] INFO  LogInterceptor - 
+2016-12-26 21:23:33.974 [qtp27266569-19] INFO  LogInterceptor - /droid/file/uploadCrash
+2016-12-26 21:23:33.976 [qtp27266569-19] INFO  LogInterceptor - {﻿
+      {
+        "distribution": {
+          "make_chrome_default_for_user": true
+        }
+      }
+    =[]}
+2016-12-26 21:23:41.427 [qtp27266569-19] INFO  LogInterceptor - 
+2016-12-26 21:32:07.304 [qtp27266569-16] INFO  LogInterceptor - /droid/file/uploadCrash
+2016-12-26 21:32:07.306 [qtp27266569-16] INFO  LogInterceptor - {------WebKitFormBoundaryNmMDWcEeM5sMmG1q
+Content-Disposition: form-data; name=["file"; filename="master_preferences"
+Content-Type: application/octet-stream
+
+﻿
+      {
+        "distribution": {
+          "make_chrome_default_for_user": true
+        }
+      }
+    
+------WebKitFormBoundaryNmMDWcEeM5sMmG1q
+Content-Disposition: form-data; name=""
+
+
+------WebKitFormBoundaryNmMDWcEeM5sMmG1q--
+]}
+2016-12-26 21:32:14.698 [qtp27266569-16] INFO  LogInterceptor - 
+2016-12-26 21:37:10.362 [qtp27266569-19] INFO  LogInterceptor - /droid/file/uploadCrash
+2016-12-26 21:37:10.362 [qtp27266569-19] INFO  LogInterceptor - {submit=[Ljava.lang.String;@1082f6a}
+2016-12-26 21:51:57.122 [qtp27266569-18] INFO  LogInterceptor - /droid/file/uploadCrash
+2016-12-26 21:51:57.126 [qtp27266569-18] INFO  LogInterceptor - {}
+2016-12-26 21:52:05.629 [qtp27266569-18] INFO  LogInterceptor - 
+2016-12-26 21:52:11.814 [qtp27266569-21] INFO  LogInterceptor - /droid/file/uploadCrash
+2016-12-26 21:52:11.817 [qtp27266569-21] INFO  LogInterceptor - {submit=[Ljava.lang.String;@15387bc}
+2016-12-26 21:52:46.223 [qtp27266569-21] INFO  LogInterceptor - E:/springUpload/master_preferences

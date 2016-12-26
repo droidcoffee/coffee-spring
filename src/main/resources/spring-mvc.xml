@@ -66,11 +66,12 @@
 		</mvc:return-value-handlers>
 	</mvc:annotation-driven>
 	 -->
-	<!-- 项目中的拦截器、主要用作log处理 -->
+	<!-- 项目中的拦截器、主要用作log处理 
 	<mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/**" />
 			<bean class="com.coffee.app.LogInterceptor"></bean>
 		</mvc:interceptor>
 	</mvc:interceptors>
+	-->
 </beans>
