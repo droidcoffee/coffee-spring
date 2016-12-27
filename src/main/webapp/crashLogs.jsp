@@ -4,16 +4,17 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <%
+	String base = request.getScheme() + "://" + request.getServerName()
+			+ ":" + request.getServerPort() + "/"
+			+ request.getContextPath();
+	pageContext.setAttribute("base", base);
 	String path = request.getContextPath();
 	pageContext.setAttribute("path", path);
 %>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title></title>
-<script src="${path}/res/common/js/jquery.js" type="text/javascript"></script>
-<script src="${path}/res/common/js/jquery.ext.js" type="text/javascript"></script>
-
+<base href="${base}" />
 <script type="text/javascript">
 	function del(url, sid) {
 		if (!confirm('您确定要删除吗?')) {
@@ -73,8 +74,7 @@
 		</div>
 		<!-- 查询结果  -->
 		<form id="tableForm" method="post">
-			<input type="hidden" name="action" /> 
-			<input type="hidden" name="id" />
+			<input type="hidden" name="action" /> <input type="hidden" name="id" />
 			<table class="pn-ltable" style="" width="100%" cellspacing="1"
 				cellpadding="0" border="0">
 				<thead class="pn-lthead">
@@ -91,8 +91,9 @@
 							onmouseout="this.bgColor='#ffffff'">
 							<td><input type="checkbox" name="cid" value="${item}" /></td>
 							<td>${item}</td>
-							<td align="center"><a target="_blank" href="/droid/file/queryLogContent?id=${item}" class="pn-opt">查看</a> |
-								<a href="/droid/file/deleteLogFile?id=${item}" class="pn-opt">删除</a>
+							<td align="center"><a target="_blank"
+								href="/crash/queryLogContent?id=${item}" class="pn-opt">查看</a> |
+								<a href="/crash/deleteLogFile?id=${item}" class="pn-opt">删除</a>
 							</td>
 						</tr>
 					</c:forEach>

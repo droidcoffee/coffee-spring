@@ -18,9 +18,16 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
-@RequestMapping("file")
+/**
+ * 文件上传需要 在spring-mvc.xml中添加 <br>
+ * <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+ * 
+ * @author DELL
+ *
+ */
+@RequestMapping("crash")
 @Controller
-public class FileController {
+public class CrashLogController {
 
 	private String getCrashDir() {
 		String crashDir = "";
@@ -84,7 +91,7 @@ public class FileController {
 		ArrayList<String> files = new ArrayList<>();
 		files.addAll(Arrays.asList(crashFile.list()));
 		request.setAttribute("items", files);
-		return "crashFiles";
+		return "crashLogs";
 	}
 
 	/**
