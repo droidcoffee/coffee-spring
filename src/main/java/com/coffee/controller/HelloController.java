@@ -13,7 +13,11 @@ public class HelloController {
 	@RequestMapping("hello")
 	@ResponseBody
 	public String sayHello(HttpServletRequest request) {
-		return "sayHello";
+		String exception = request.getParameter("exception");
+		if (exception != null) {
+			System.out.println(1 / 0);
+		}
+		return "你好, 世界";
 	}
 
 }

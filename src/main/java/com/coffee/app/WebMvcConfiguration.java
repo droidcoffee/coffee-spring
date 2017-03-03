@@ -1,6 +1,7 @@
 package com.coffee.app;
 
 import java.lang.reflect.Method;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +11,7 @@ import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.method.support.HandlerMethodReturnValueHandler;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter;
+import org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod;
 
 /**
  * 
@@ -22,14 +24,21 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
 	/**
 	 * 改变ReturnValueHandlers的顺序<br>
 	 * 加入自定义RequestResponseBodyMethodProcessorExt
-	 * {@link ServletInvocableHandlerMethod#invokeAndHandle(org.springframework.web.context.request.ServletWebRequest, org.springframework.web.method.support.ModelAndViewContainer, Object...)<br> {
+	 * {@link ServletInvocableHandlerMethod#invokeAndHandle(org.springframework.web.context.request.ServletWebRequest, org.springframework.web.method.support.ModelAndViewContainer, Object...)
+	 * 
 	 * @link HandlerMethodReturnValueHandlerComposite#getReturnValueHandler(MethodParameter)}
 	 */
 	@SuppressWarnings("unchecked")
 	public RequestMappingHandlerAdapter requestMappingHandlerAdapter() {
 		RequestMappingHandlerAdapter handlerAdapter = super.requestMappingHandlerAdapter();
+		//
 		List<HttpMessageConverter<?>> messageConverters = new ArrayList<>();
-		messageConverters.add(new StringHttpMessageConverter());
+		StringHttpMessageConverter strConverter = new StringHttpMessageConverter(Charset.forName("UTF-8"));
+//		MappingJackson2HttpMessageConverter jacksonConverter = new MappingJackson2HttpMessageConverter();
+//		jacksonConverter.setPrettyPrint(true);
+		messageConverters.add(strConverter);
+		//messageConverters.add(jacksonConverter);
+		// 需要传入参数HttpMessageConverter列表
 		RequestResponseBodyMethodProcessorExt processor = new RequestResponseBodyMethodProcessorExt(messageConverters);
 		try {
 			Method getDefaultReturnValueHandlers = handlerAdapter.getClass().getDeclaredMethod("getDefaultReturnValueHandlers");
@@ -37,7 +46,6 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
 			List<HandlerMethodReturnValueHandler> defaultReturnValueHandlers = (List<HandlerMethodReturnValueHandler>) getDefaultReturnValueHandlers.invoke(handlerAdapter);
 			defaultReturnValueHandlers.add(0, processor);
 			handlerAdapter.setReturnValueHandlers(defaultReturnValueHandlers);
-			// handlerAdapter.getReturnValueHandlers().add(0, processor);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
