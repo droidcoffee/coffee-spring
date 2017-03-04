@@ -1,3 +1,15 @@
-2017-03-03 18:17:57.229 [qtp1825071442-19] INFO  LogInterceptor - /droid/coffee/hello
-2017-03-03 18:17:57.233 [qtp1825071442-19] INFO  LogInterceptor - {}
-2017-03-03 18:17:57.251 [qtp1825071442-19] INFO  LogInterceptor - 你好, 世界
+2017-03-04 10:05:16.679 [qtp1160487387-13] INFO  LogInterceptor - /droid/coffee/hello
+2017-03-04 10:05:16.681 [qtp1160487387-13] INFO  LogInterceptor - {}
+2017-03-04 10:05:16.699 [qtp1160487387-13] INFO  LogInterceptor - 你好, 世界
+2017-03-04 10:06:19.616 [qtp1160487387-14] INFO  LogInterceptor - /droid/coffee/hello
+2017-03-04 10:06:19.616 [qtp1160487387-14] INFO  LogInterceptor - {}
+2017-03-04 10:06:19.633 [qtp1160487387-14] INFO  LogInterceptor - 你好, 世界
+2017-03-04 10:06:42.737 [qtp1160487387-20] INFO  LogInterceptor - /droid/coffee/hello
+2017-03-04 10:06:42.741 [qtp1160487387-20] INFO  LogInterceptor - {}
+2017-03-04 10:06:42.748 [qtp1160487387-20] INFO  LogInterceptor - 你好, 世界
+2017-03-04 10:07:37.169 [qtp1160487387-15] INFO  LogInterceptor - /droid/coffee/hello
+2017-03-04 10:07:37.171 [qtp1160487387-15] INFO  LogInterceptor - {}
+2017-03-04 10:07:37.207 [qtp1160487387-15] INFO  LogInterceptor - 你好, 世界
+2017-03-04 10:25:55.185 [qtp1160487387-24] INFO  LogInterceptor - /droid/coffee/hello
+2017-03-04 10:25:55.185 [qtp1160487387-24] INFO  LogInterceptor - {}
+2017-03-04 10:25:55.201 [qtp1160487387-24] INFO  LogInterceptor - 你好, 世界
